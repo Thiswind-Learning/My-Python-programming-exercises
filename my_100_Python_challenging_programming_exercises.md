@@ -1,41 +1,58 @@
-100+ Python challenging programming exercises
+# 100+ Python challenging programming exercises
+forked from [zhiwehu/Python-programming-exercises](https://github.com/zhiwehu/Python-programming-exercises)
 
-1.	Level description
-Level	Description
-Level 1	Beginner means someone who has just gone through an introductory Python course. He can solve some problems with 1 or 2 Python classes or functions. Normally, the answers could directly be found in the textbooks.
-Level 2	Intermediate means someone who has just learned Python, but already has a relatively strong programming background from before. He should be able to solve problems which may involve 3 or 3 Python classes or functions. The answers cannot be directly be found in the textbooks.
-Level 3	Advanced. He should use Python to solve more complex problem using more rich libraries functions and data structures and algorithms. He is supposed to solve the problem using several Python standard packages and advanced techniques.
+## Introduction
+
+ 1.	Level description
+
+| Level |   Description |
+| ----- | ------------- |
+| Level 1 |	Beginner means someone who has just gone through an introductory Python course. He can solve some problems with 1 or 2 Python classes or functions. Normally, the answers could directly be found in the textbooks. |
+| Level 2 |	Intermediate means someone who has just learned Python, but already has a relatively strong programming background from before. He should be able to solve problems which may involve 3 or 3 Python classes or functions. The answers cannot be directly be found in the textbooks. |
+| Level 3 |	Advanced. He should use Python to solve more complex problem using more rich libraries functions and data structures and algorithms. He is supposed to solve the problem using several Python standard packages and advanced techniques. |
+
 
 2.	Problem template
 
-#----------------------------------------#
-Question
-Hints
-Solution
+```text
+------------------------------------------
+Number
+Level
+Question  
+Hints  
+Solution  
+Test
 
-3.	Questions
+------------------------------------------
+```
 
-#----------------------------------------#
-Question 1
+ 
+## Questions
+
+------------------------------------------
+Question 1  
 Level 1
 
-Question:
+Question:  
 Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5,
-between 2000 and 3200 (both included).
+between 2000 and 3200 (both included).  
 The numbers obtained should be printed in a comma-separated sequence on a single line.
 
 Hints: 
 Consider use range(#begin, #end) method
 
 Solution:
+```python
 l=[]
 for i in range(2000, 3201):
     if (i%7==0) and (i%5!=0):
         l.append(str(i))
 
 print ','.join(l)
+```
 
 Test:
+```python
 >>> result = solution(input)
 >>> success = True
 >>> for x in result:
@@ -45,9 +62,10 @@ Test:
 ...
 >>> success
 True
-#----------------------------------------#
+```
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 2
 Level 1
 
@@ -76,9 +94,9 @@ Test:
 >>> result = solution(input)
 >>> result
 40320
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 3
 Level 1
 
@@ -106,9 +124,9 @@ Test:
 >>> result = solution(input)
 >>> result
 {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 4
 Level 1
 
@@ -137,9 +155,9 @@ Test:
 >>> result
 ['34', '67', '55', '33', '12', '98']
 ('34', '67', '55', '33', '12', '98')
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 5
 Level 1
 
@@ -183,9 +201,9 @@ Test:
 ... 
 >>> out.getvalue().strip()
 'ABC 123'
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 6
 Level 2
 
@@ -216,9 +234,9 @@ for d in items:
     value.append(str(int(round(math.sqrt(2*c*float(d)/h)))))
 
 print ','.join(value)
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 7
 Level 2
 
@@ -246,9 +264,9 @@ for row in range(rowNum):
         multilist[row][col]= row*col
 
 print multilist
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 8
 Level 2
 
@@ -266,9 +284,9 @@ Solution:
 items=[x for x in raw_input().split(',')]
 items.sort()
 print ','.join(items)
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 9
 Level 2
 
@@ -295,9 +313,9 @@ while True:
 
 for sentence in lines:
     print sentence
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 10
 Level 2
 
@@ -316,9 +334,9 @@ Solution:
 s = raw_input()
 words = [word for word in s.split(" ")]
 print " ".join(sorted(list(set(words))))
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 11
 Level 2
 
@@ -342,9 +360,9 @@ for p in items:
         value.append(p)
 
 print ','.join(value)
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 12
 Level 2
 
@@ -362,9 +380,9 @@ for i in range(1000, 3001):
     if (int(s[0])%2==0) and (int(s[1])%2==0) and (int(s[2])%2==0) and (int(s[3])%2==0):
         values.append(s)
 print ",".join(values)
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 13
 Level 2
 
@@ -391,9 +409,9 @@ for c in s:
         pass
 print "LETTERS", d["LETTERS"]
 print "DIGITS", d["DIGITS"]
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 14
 Level 2
 
@@ -420,9 +438,9 @@ for c in s:
         pass
 print "UPPER CASE", d["UPPER CASE"]
 print "LOWER CASE", d["LOWER CASE"]
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 15
 Level 2
 
@@ -443,9 +461,9 @@ n2 = int( "%s%s" % (a,a) )
 n3 = int( "%s%s%s" % (a,a,a) )
 n4 = int( "%s%s%s%s" % (a,a,a,a) )
 print n1+n2+n3+n4
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 16
 Level 2
 
@@ -463,7 +481,7 @@ Solution:
 values = raw_input()
 numbers = [x for x in values.split(",") if int(x)%2!=0]
 print ",".join(numbers)
-#----------------------------------------#
+------------------------------------------
 
 Question 17
 Level 2
@@ -501,9 +519,9 @@ while True:
     else:
         pass
 print netAmount
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 18
 Level 3
 
@@ -549,9 +567,9 @@ for p in items:
         pass
     value.append(p)
 print ",".join(value)
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 19
 Level 3
 
@@ -585,9 +603,9 @@ while True:
     l.append(tuple(s.split(",")))
 
 print sorted(l, key=itemgetter(0,1,2))
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 20
 Level 3
 
@@ -608,9 +626,9 @@ def putNumbers(n):
 
 for i in reverse(100):
     print i
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 21
 Level 3
 
@@ -656,9 +674,9 @@ while True:
         pass
 
 print int(round(math.sqrt(pos[1]**2+pos[0]**2)))
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 22
 Level 3
 
@@ -693,9 +711,9 @@ words.sort()
 
 for w in words:
     print "%s:%d" % (w,freq[w])
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 23
 level 1
 
@@ -711,9 +729,9 @@ def square(num):
 
 print square(2)
 print square(3)
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 24
 Level 1
 
@@ -739,9 +757,9 @@ def square(num):
 
 print square(2)
 print square.__doc__
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question 25
 Level 1
 
@@ -767,9 +785,9 @@ print "%s name is %s" % (Person.name, jeffrey.name)
 nico = Person()
 nico.name = "Nico"
 print "%s name is %s" % (Person.name, nico.name)
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 Question:
 Define a function which can compute the sum of two numbers.
 
@@ -782,7 +800,7 @@ def SumFunction(number1, number2):
 
 print SumFunction(1,2)
 
-#----------------------------------------#
+------------------------------------------
 Question:
 Define a function that can convert a integer into a string and print it in console.
 
@@ -797,7 +815,7 @@ def printValue(n):
 printValue(3)
 	
 
-#----------------------------------------#
+------------------------------------------
 Question:
 Define a function that can convert a integer into a string and print it in console.
 
@@ -811,7 +829,7 @@ def printValue(n):
 
 printValue(3)
 
-#----------------------------------------#
+------------------------------------------
 2.10
 
 Question:
@@ -828,7 +846,7 @@ def printValue(s1,s2):
 printValue("3","4") #7
 
 
-#----------------------------------------#
+------------------------------------------
 2.10
 
 
@@ -845,7 +863,7 @@ def printValue(s1,s2):
 
 printValue("3","4") #34
 
-#----------------------------------------#
+------------------------------------------
 2.10
 
 
@@ -873,7 +891,7 @@ printValue("one","three")
 
 
 
-#----------------------------------------#
+------------------------------------------
 2.10
 
 Question:
@@ -894,7 +912,7 @@ def checkValue(n):
 checkValue(7)
 
 
-#----------------------------------------#
+------------------------------------------
 2.10
 
 Question:
@@ -920,7 +938,7 @@ printDict()
 
 
 
-#----------------------------------------#
+------------------------------------------
 2.10
 
 Question:
@@ -943,7 +961,7 @@ def printDict():
 printDict()
 
 
-#----------------------------------------#
+------------------------------------------
 2.10
 
 Question:
@@ -967,7 +985,7 @@ def printDict():
 
 printDict()
 
-#----------------------------------------#
+------------------------------------------
 2.10
 
 Question:
@@ -992,7 +1010,7 @@ def printDict():
 printDict()
 
 
-#----------------------------------------#
+------------------------------------------
 2.10
 
 Question:
@@ -1014,7 +1032,7 @@ def printList():
 
 printList()
 
-#----------------------------------------#
+------------------------------------------
 2.10
 
 Question:
@@ -1038,7 +1056,7 @@ def printList():
 printList()
 
 
-#----------------------------------------#
+------------------------------------------
 2.10
 
 Question:
@@ -1062,7 +1080,7 @@ def printList():
 printList()
 
 
-#----------------------------------------#
+------------------------------------------
 2.10
 
 Question:
@@ -1086,7 +1104,7 @@ def printList():
 printList()
 
 
-#----------------------------------------#
+------------------------------------------
 2.10
 
 Question:
@@ -1110,7 +1128,7 @@ printTuple()
 
 
 
-#----------------------------------------#
+------------------------------------------
 2.10
 
 Question:
@@ -1128,7 +1146,7 @@ print tp1
 print tp2
 
 
-#----------------------------------------#
+------------------------------------------
 2.10
 
 Question:
@@ -1151,7 +1169,7 @@ print tp2
 
 
 
-#----------------------------------------#
+------------------------------------------
 2.14
 
 Question:
@@ -1170,7 +1188,7 @@ else:
 
 
 
-#----------------------------------------#
+------------------------------------------
 3.4
 
 Question:
@@ -1187,7 +1205,7 @@ evenNumbers = filter(lambda x: x%2==0, li)
 print evenNumbers
 
 
-#----------------------------------------#
+------------------------------------------
 3.4
 
 Question:
@@ -1203,7 +1221,7 @@ li = [1,2,3,4,5,6,7,8,9,10]
 squaredNumbers = map(lambda x: x**2, li)
 print squaredNumbers
 
-#----------------------------------------#
+------------------------------------------
 3.5
 
 Question:
@@ -1223,7 +1241,7 @@ print evenNumbers
 
 
 
-#----------------------------------------#
+------------------------------------------
 3.5
 
 Question:
@@ -1239,7 +1257,7 @@ evenNumbers = filter(lambda x: x%2==0, range(1,21))
 print evenNumbers
 
 
-#----------------------------------------#
+------------------------------------------
 3.5
 
 Question:
@@ -1257,7 +1275,7 @@ print squaredNumbers
 
 
 
-#----------------------------------------#
+------------------------------------------
 7.2
 
 Question:
@@ -1280,7 +1298,7 @@ American.printNationality()
 
 
 
-#----------------------------------------#
+------------------------------------------
 
 7.2
 
@@ -1307,7 +1325,7 @@ print aNewYorker
 
 
 
-#----------------------------------------#
+------------------------------------------
 
 
 7.2
@@ -1336,7 +1354,7 @@ print aCircle.area()
 
 
 
-#----------------------------------------#
+------------------------------------------
 
 7.2
 
@@ -1362,7 +1380,7 @@ print aRectangle.area()
 
 
 
-#----------------------------------------#
+------------------------------------------
 
 7.2
 
@@ -1399,7 +1417,7 @@ print aSquare.area()
 
 
 
-#----------------------------------------#
+------------------------------------------
 
 
 Please raise a RuntimeError exception.
@@ -1414,7 +1432,7 @@ raise RuntimeError('something wrong')
 
 
 
-#----------------------------------------#
+------------------------------------------
 Write a function to compute 5/0 and use try/except to catch the exceptions.
 
 Hints:
@@ -1436,7 +1454,7 @@ finally:
     print 'In finally block for cleanup'
 
 
-#----------------------------------------#
+------------------------------------------
 Define a custom exception class which takes a string message as attribute.
 
 Hints:
@@ -1457,7 +1475,7 @@ class MyError(Exception):
 
 error = MyError("something wrong")
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Assuming that we have some email addresses in the "username@companyname.com" format, please write program to print the user name of a given email address. Both user names and company names are composed of letters only.
@@ -1485,7 +1503,7 @@ r2 = re.match(pat2,emailAddress)
 print r2.group(1)
 
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Assuming that we have some email addresses in the "username@companyname.com" format, please write program to print the company name of a given email address. Both user names and company names are composed of letters only.
@@ -1515,7 +1533,7 @@ print r2.group(2)
 
 
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Write a program which accepts a sequence of words separated by whitespace as input to print the words composed of digits only.
@@ -1541,7 +1559,7 @@ s = raw_input()
 print re.findall("\d+",s)
 
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 
@@ -1556,7 +1574,7 @@ Solution:
 unicodeString = u"hello world!"
 print unicodeString
 
-#----------------------------------------#
+------------------------------------------
 Write a program to read an ASCII string and to convert it to a unicode string encoded by utf-8.
 
 Hints:
@@ -1569,7 +1587,7 @@ s = raw_input()
 u = unicode( s ,"utf-8")
 print u
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Write a special comment to indicate a Python source code file is in unicode.
@@ -1580,7 +1598,7 @@ Solution:
 
 # -*- coding: utf-8 -*-
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Write a program to compute 1/2+2/3+3/4+...+n/n+1 with a given n input by console (n>0).
@@ -1608,7 +1626,7 @@ for i in range(1,n+1):
 print sum
 
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Write a program to compute:
@@ -1643,7 +1661,7 @@ def f(n):
 n=int(raw_input())
 print f(n)
 
-#----------------------------------------#
+------------------------------------------
 
 Question:
 
@@ -1683,9 +1701,9 @@ n=int(raw_input())
 print f(n)
 
 
-#----------------------------------------#
+------------------------------------------
 
-#----------------------------------------#
+------------------------------------------
 
 Question:
 
@@ -1727,7 +1745,7 @@ values = [str(f(x)) for x in range(0, n+1)]
 print ",".join(values)
 
 
-#----------------------------------------#
+------------------------------------------
 
 Question:
 
@@ -1765,7 +1783,7 @@ for i in EvenGenerator(n):
 print ",".join(values)
 
 
-#----------------------------------------#
+------------------------------------------
 
 Question:
 
@@ -1800,7 +1818,7 @@ for i in NumGenerator(n):
 print ",".join(values)
 
 
-#----------------------------------------#
+------------------------------------------
 
 Question:
 
@@ -1820,7 +1838,7 @@ for i in li:
     assert i%2==0
 
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Please write a program which accepts basic mathematic expression from console and print the evaluation result.
@@ -1844,7 +1862,7 @@ expression = raw_input()
 print eval(expression)
 
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Please write a binary search function which searches an item in a sorted list. The function should return the index of element to be searched in the list.
@@ -1879,7 +1897,7 @@ print bin_search(li,12)
 
 
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Please write a binary search function which searches an item in a sorted list. The function should return the index of element to be searched in the list.
@@ -1914,7 +1932,7 @@ print bin_search(li,12)
 
 
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Please generate a random float where the value is between 10 and 100 using Python math module.
@@ -1930,7 +1948,7 @@ Solution:
 import random
 print random.random()*100
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Please generate a random float where the value is between 5 and 95 using Python math module.
@@ -1947,7 +1965,7 @@ import random
 print random.random()*100-5
 
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Please write a program to output a random even number between 0 and 10 inclusive using random module and list comprehension.
@@ -1964,7 +1982,7 @@ import random
 print random.choice([i for i in range(11) if i%2==0])
 
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Please write a program to output a random number, which is divisible by 5 and 7, between 0 and 10 inclusive using random module and list comprehension.
@@ -1982,7 +2000,7 @@ print random.choice([i for i in range(201) if i%5==0 and i%7==0])
 
 
 
-#----------------------------------------#
+------------------------------------------
 
 Question:
 
@@ -1999,7 +2017,7 @@ Solution:
 import random
 print random.sample(range(100), 5)
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Please write a program to randomly generate a list with 5 even numbers between 100 and 200 inclusive.
@@ -2016,7 +2034,7 @@ import random
 print random.sample([i for i in range(100,201) if i%2==0], 5)
 
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Please write a program to randomly generate a list with 5 numbers, which are divisible by 5 and 7 , between 1 and 1000 inclusive.
@@ -2032,7 +2050,7 @@ Solution:
 import random
 print random.sample([i for i in range(1,1001) if i%5==0 and i%7==0], 5)
 
-#----------------------------------------#
+------------------------------------------
 
 Question:
 
@@ -2049,7 +2067,7 @@ Solution:
 import random
 print random.randrange(7,16)
 
-#----------------------------------------#
+------------------------------------------
 
 Question:
 
@@ -2069,7 +2087,7 @@ t = zlib.compress(s)
 print t
 print zlib.decompress(t)
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Please write a program to print the running time of execution of "1+1" for 100 times.
@@ -2085,7 +2103,7 @@ from timeit import Timer
 t = Timer("for i in range(100):1+1")
 print t.timeit()
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Please write a program to shuffle and print the list [3,6,7,8].
@@ -2102,7 +2120,7 @@ li = [3,6,7,8]
 shuffle(li)
 print li
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Please write a program to shuffle and print the list [3,6,7,8].
@@ -2121,7 +2139,7 @@ print li
 
 
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Please write a program to generate all sentences where subject is in ["I", "You"] and verb is in ["Play", "Love"] and the object is in ["Hockey","Football"].
@@ -2141,7 +2159,7 @@ for i in range(len(subjects)):
             print sentence
 
 
-#----------------------------------------#
+------------------------------------------
 Please write a program to print the list after removing delete even numbers in [5,6,77,45,22,12,24].
 
 Hints:
@@ -2153,7 +2171,7 @@ li = [5,6,77,45,22,12,24]
 li = [x for x in li if x%2!=0]
 print li
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 By using list comprehension, please write a program to print the list after removing delete numbers which are divisible by 5 and 7 in [12,24,35,70,88,120,155].
@@ -2168,7 +2186,7 @@ li = [x for x in li if x%5!=0 and x%7!=0]
 print li
 
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 By using list comprehension, please write a program to print the list after removing the 0th, 2nd, 4th,6th numbers in [12,24,35,70,88,120,155].
@@ -2183,7 +2201,7 @@ li = [12,24,35,70,88,120,155]
 li = [x for (i,x) in enumerate(li) if i%2!=0]
 print li
 
-#----------------------------------------#
+------------------------------------------
 
 Question:
 
@@ -2197,7 +2215,7 @@ Solution:
 array = [[ [0 for col in range(8)] for col in range(5)] for row in range(3)]
 print array
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 By using list comprehension, please write a program to print the list after removing the 0th,4th,5th numbers in [12,24,35,70,88,120,155].
@@ -2214,7 +2232,7 @@ print li
 
 
 
-#----------------------------------------#
+------------------------------------------
 
 Question:
 
@@ -2230,7 +2248,7 @@ li = [x for x in li if x!=24]
 print li
 
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 With two given lists [1,3,6,78,35,55] and [12,24,35,24,88,120,155], write a program to make a list whose elements are intersection of the above given lists.
@@ -2246,7 +2264,7 @@ set1 &= set2
 li=list(set1)
 print li
 
-#----------------------------------------#
+------------------------------------------
 
 With a given list [12,24,35,24,88,120,155,88,120,155], write a program to print this list after removing all duplicate values with original order reserved.
 
@@ -2269,7 +2287,7 @@ li=[12,24,35,24,88,120,155,88,120,155]
 print removeDuplicate(li)
 
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Define a class Person and its two child classes: Male and Female. All classes have a method "getGender" which can print "Male" for Male class and "Female" for Female class.
@@ -2298,7 +2316,7 @@ print aFemale.getGender()
 
 
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Please write a program which count and print the numbers of each character in a string input by console.
@@ -2330,7 +2348,7 @@ for s in s:
     dic[s] = dic.get(s,0)+1
 print '\n'.join(['%s,%s' % (k, v) for k, v in dic.items()])
 
-#----------------------------------------#
+------------------------------------------
 
 Question:
 
@@ -2354,7 +2372,7 @@ s=raw_input()
 s = s[::-1]
 print s
 
-#----------------------------------------#
+------------------------------------------
 
 Question:
 
@@ -2377,7 +2395,7 @@ Solution:
 s=raw_input()
 s = s[::2]
 print s
-#----------------------------------------#
+------------------------------------------
 
 
 Question:
@@ -2393,7 +2411,7 @@ Solution:
 import itertools
 print list(itertools.permutations([1,2,3]))
 
-#----------------------------------------#
+------------------------------------------
 Question:
 
 Write a program to solve a classic ancient Chinese puzzle: 
@@ -2417,6 +2435,6 @@ numlegs=94
 solutions=solve(numheads,numlegs)
 print solutions
 
-#----------------------------------------#
+------------------------------------------
 
 
