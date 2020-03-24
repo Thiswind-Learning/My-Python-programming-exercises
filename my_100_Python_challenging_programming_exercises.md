@@ -1032,7 +1032,7 @@ No. 27
 LVL 1
 
 
-Question:
+Question:  
 Define a function that can convert a integer into a string and print it in 
 console.
 
@@ -1051,13 +1051,18 @@ printValue(3)
 ------------------------------------------
 
 ------------------------------------------
-2.10
+No. 28  
+LVL 1
 
-Question:
-Define a function that can receive two integral numbers in string form and compute their sum and then print it in console.
 
-Hints:
-Use int() to convert a string to integer.
+Question:  
+Define a function that can receive two integral numbers in string form and 
+compute their sum and then print it in console.
+
+
+Hints:  
+Use `int()` to convert a string to integer.
+
 
 Solution:
 ```python
@@ -1069,16 +1074,20 @@ printValue("3","4") #7
 ------------------------------------------
 
 ------------------------------------------
-2.10
+No. 29
+LVL 1
 
 
-Question:
-Define a function that can accept two strings as input and concatenate them and then print it in console.
+Question:  
+Define a function that can accept two strings as input and concatenate them and 
+then print it in console.
 
-Hints:
-Use + to concatenate the strings
 
-Solution:
+Hints:  
+Use `+` to concatenate the strings
+
+
+Solution:  
 ```python
 def printValue(s1,s2):
 	print s1+s2
@@ -1088,14 +1097,20 @@ printValue("3","4") #34
 ------------------------------------------
 
 ------------------------------------------
-2.10
+No. 30  
+LVL 1
 
 
-Question:
-Define a function that can accept two strings as input and print the string with maximum length in console. If two strings have the same length, then the function should print al l strings line by line.
+Question:  
+Define a function that can accept two strings as input and print the string with 
+maximum length in console.   
+If two strings have the same length, then the function should print all strings 
+line by line.  
 
-Hints:
-Use len() function to get the length of a string
+
+Hints:  
+Use `len()` function to get the length of a string.  
+
 
 Solution:
 ```python
@@ -1116,13 +1131,18 @@ printValue("one","three")
 ------------------------------------------
 
 ------------------------------------------
-2.10
+No. 31  
+LVL 1
 
-Question:
-Define a function that can accept an integer number as input and print the "It is an even number" if the number is even, otherwise print "It is an odd number".
 
-Hints:
-Use % operator to check if a number is even or odd.
+Question:  
+Define a function that can accept an integer number as input and print the "It 
+is an even number" if the number is even, otherwise print "It is an odd number".
+
+
+Hints:  
+Use `%` operator to check if a number is even or odd.  
+
 
 Solution:
 ```python
