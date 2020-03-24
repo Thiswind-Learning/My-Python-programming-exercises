@@ -864,14 +864,20 @@ print int(round(math.sqrt(pos[1]**2+pos[0]**2)))
 ------------------------------------------
 
 ------------------------------------------
-Question 22
-Level 3
+No. 22  
+LVL 3  
 
-Question:
-Write a program to compute the frequency of the words from the input. The output should output after sorting the key alphanumerically. 
-Suppose the following input is supplied to the program:
-New to Python or choosing between Python 2 and Python 3? Read Python 2 or Python 3.
+
+Question:  
+Write a program to compute the frequency of the words from the input.   
+The output should output after sorting the key alphanumerically.   
+Suppose the following input is supplied to the program:  
+```text
+New to Python or choosing between Python 2 and Python 3? Read Python 2 or 
+Python 3.
+```
 Then, the output should be:
+```text
 2:2
 3.:1
 3?:1
@@ -883,9 +889,13 @@ between:1
 choosing:1
 or:2
 to:1
+```
 
-Hints
-In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Hints:  
+In case of input data being supplied to the question, it should be assumed to be 
+a console input.  
+
 
 Solution:
 ```python
@@ -903,14 +913,17 @@ for w in words:
 ------------------------------------------
 
 ------------------------------------------
-Question 23
-level 1
+No. 23  
+LVl 1  
 
-Question:
-Write a method which can calculate square value of number
 
-Hints:
-Using the ** operator
+Question:  
+Write a method which can calculate square value of number.  
+
+
+Hints:  
+Using the ** operator  
+
 
 Solution:
 ```python
@@ -923,18 +936,24 @@ print square(3)
 ------------------------------------------
 
 ------------------------------------------
-Question 24
-Level 1
+No. 24  
+LVL 1  
 
-Question:
-Python has many built-in functions, and if you do not know how to use it, you can read document online or find some books. But Python has a built-in document function for every built-in functions.
-Please write a program to print some Python built-in functions documents, such as abs(), int(), raw_input()
-And add document for your own function
+
+Question:  
+Python has many built-in functions, and if you do not know how to use it, you 
+can read document online or find some books. But Python has a built-in document 
+function for every built-in functions.  
+Please write a program to print some Python built-in functions documents, such 
+as `abs()`, `int()`, `raw_input()`  
+And add document for your own function.  
+
     
-Hints:
-The built-in document method is __doc__
+Hints:  
+The built-in document method is `__doc__`
 
-Solution:
+
+Solution:  
 ```python
 print abs.__doc__
 print int.__doc__
@@ -953,15 +972,18 @@ print square.__doc__
 ------------------------------------------
 
 ------------------------------------------
-Question 25
-Level 1
+No. 25  
+LVL 1  
 
-Question:
-    Define a class, which have a class parameter and have a same instance parameter.
 
-Hints:
-    Define a instance parameter, need add it in __init__ method
-    You can init a object with construct parameter or set the value later
+Question:  
+Define a class, which have a class parameter and have a same instance parameter.  
+
+
+Hints:   
+Define a instance parameter, need add it in `__init__` method.  
+You can init a object with construct parameter or set the value later.
+
 
 Solution:
 ```python
@@ -983,11 +1005,18 @@ print "%s name is %s" % (Person.name, nico.name)
 ------------------------------------------
 
 ------------------------------------------
-Question:
-Define a function which can compute the sum of two numbers.
+No. 26
+LVL  1
 
-Hints:
-Define a function with two numbers as arguments. You can compute the sum in the function and return the value.
+
+Question:  
+Define a function which can compute the sum of two numbers.  
+
+
+Hints:  
+Define a function with two numbers as arguments. You can compute the sum in the 
+function and return the value.  
+
 
 Solution
 ```python
@@ -999,31 +1028,21 @@ print SumFunction(1,2)
 ------------------------------------------
 
 ------------------------------------------
+No. 27  
+LVL 1
+
+
 Question:
-Define a function that can convert a integer into a string and print it in console.
+Define a function that can convert a integer into a string and print it in 
+console.
 
-Hints:
-Use str() to convert a number to string.
 
-Solution
+Hints:  
+Use `str()` to convert a number to string.
+
+
+Solution:  
 ```pyton
-def printValue(n):
-	print str(n)
-
-printValue(3)
-```
-------------------------------------------
-
-------------------------------------------
-Question:
-Define a function that can convert a integer into a string and print it in console.
-
-Hints:
-
-Use str() to convert a number to string.
-
-Solution:
-```python
 def printValue(n):
 	print str(n)
 
