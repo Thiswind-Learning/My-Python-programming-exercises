@@ -182,7 +182,7 @@ printString: to print the string in upper case.
 Also please include simple test function to test the class methods.  
 
 
-Hints:
+Hints:  
 Use __init__ method to construct some parameters
 
 
@@ -463,28 +463,34 @@ Solution:
 values = []
 for i in range(1000, 3001):
     s = str(i)
-    if (int(s[0])%2==0) and (int(s[1])%2==0) and (int(s[2])%2==0) and (int(s[3])%2==0):
+    if (int(s[0])%2==0) and (int(s[1])%2==0) and (int(s[2])%2==0) and \
+            (int(s[3])%2==0):
         values.append(s)
 print ",".join(values)
 ```
 ------------------------------------------
 
 ------------------------------------------
-Question 13
-Level 2
+NO. 13  
+LVL 2  
 
-Question:
-Write a program that accepts a sentence and calculate the number of letters and digits.
+
+Question:  
+Write a program that accepts a sentence and calculate the number of letters and 
+digits.
 Suppose the following input is supplied to the program:
 hello world! 123
 Then, the output should be:
 LETTERS 10
 DIGITS 3
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+Hints:  
+In case of input data being supplied to the question, it should be assumed to be 
+a console input.        
+
+
+Solution:       
 ```python
 s = raw_input()
 d={"DIGITS":0, "LETTERS":0}
@@ -501,21 +507,29 @@ print "DIGITS", d["DIGITS"]
 ------------------------------------------
 
 ------------------------------------------
-Question 14
-Level 2
+No. 14  
+LVL 2  
 
-Question:
-Write a program that accepts a sentence and calculate the number of upper case letters and lower case letters.
-Suppose the following input is supplied to the program:
+
+Question:  
+Write a program that accepts a sentence and calculate the number of upper case 
+letters and lower case letters.  
+Suppose the following input is supplied to the program:  
+```text
 Hello world!
+```
 Then, the output should be:
+```text
 UPPER CASE 1
 LOWER CASE 9
+```
 
-Hints:
+
+Hints:  
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+
+Solution:  
 ```python
 s = raw_input()
 d={"UPPER CASE":0, "LOWER CASE":0}
@@ -532,20 +546,29 @@ print "LOWER CASE", d["LOWER CASE"]
 ------------------------------------------
 
 ------------------------------------------
-Question 15
-Level 2
+No. 15  
+LVL 2  
 
-Question:
-Write a program that computes the value of a+aa+aaa+aaaa with a given digit as the value of a.
-Suppose the following input is supplied to the program:
+
+Question:  
+Write a program that computes the value of a+aa+aaa+aaaa with a given digit as 
+the value of a.  
+Suppose the following input is supplied to the program:  
+```text
 9
+```
 Then, the output should be:
+```text
 11106
+```
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+Hints:  
+In case of input data being supplied to the question, it should be assumed to be 
+a console input.
+
+
+Solution:  
 ```python
 a = raw_input()
 n1 = int( "%s" % a )
@@ -557,20 +580,29 @@ print n1+n2+n3+n4
 ------------------------------------------
 
 ------------------------------------------
-Question 16
-Level 2
+No. 16  
+LVL 2  
 
-Question:
-Use a list comprehension to square each odd number in a list. The list is input by a sequence of comma-separated numbers.
-Suppose the following input is supplied to the program:
+
+Question:  
+Use a list comprehension to square each odd number in a list. The list is input 
+by a sequence of comma-separated numbers.  
+Suppose the following input is supplied to the program:  
+```text
 1,2,3,4,5,6,7,8,9
+```
 Then, the output should be:
+```text
 1,3,5,7,9
+```
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+Hints:  
+In case of input data being supplied to the question, it should be assumed to be 
+a console input.  
+
+
+Solution:  
 ```python
 values = raw_input()
 numbers = [x for x in values.split(",") if int(x)%2!=0]
@@ -578,27 +610,39 @@ print ",".join(numbers)
 ```
 ------------------------------------------
 
-Question 17
-Level 2
+------------------------------------------
+No. 17  
+LVL 2  
 
-Question:
-Write a program that computes the net amount of a bank account based a transaction log from console input. The transaction log format is shown as following:
+
+Question:  
+Write a program that computes the net amount of a bank account based a 
+transaction log from console input. The transaction log format is shown as 
+following:  
+```text
 D 100
 W 200
-
-D means deposit while W means withdrawal.
-Suppose the following input is supplied to the program:
+```
+`D` means deposit while `W` means withdrawal.  
+Suppose the following input is supplied to the program:  
+```text
 D 300
 D 300
 W 200
 D 100
-Then, the output should be:
+```
+Then, the output should be:  
+```text
 500
+```
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+Hints:  
+In case of input data being supplied to the question, it should be assumed to be 
+a console input.  
+
+
+Solution:  
 ```python
 netAmount = 0
 while True:
@@ -619,29 +663,40 @@ print netAmount
 ------------------------------------------
 
 ------------------------------------------
-Question 18
-Level 3
+No. 18  
+LVL 3  
 
-Question:
-A website requires the users to input username and password to register. Write a program to check the validity of password input by users.
-Following are the criteria for checking the password:
-1. At least 1 letter between [a-z]
-2. At least 1 number between [0-9]
-1. At least 1 letter between [A-Z]
-3. At least 1 character from [$#@]
-4. Minimum length of transaction password: 6
-5. Maximum length of transaction password: 12
-Your program should accept a sequence of comma separated passwords and will check them according to the above criteria. Passwords that match the criteria are to be printed, each separated by a comma.
-Example
-If the following passwords are given as input to the program:
+
+Question:  
+A website requires the users to input username and password to register. Write a 
+program to check the validity of password input by users.  
+Following are the criteria for checking the password:  
+(1) At least 1 letter between [a-z]  
+(2) At least 1 number between [0-9]  
+(1) At least 1 letter between [A-Z]  
+(3) At least 1 character from [$#@]  
+(4) Minimum length of transaction password: 6  
+(5) Maximum length of transaction password: 12  
+Your program should accept a sequence of comma separated passwords and will check 
+them according to the above criteria. Passwords that match the criteria are to be 
+printed, each separated by a comma.  
+Example  
+If the following passwords are given as input to the program:  
+```text
 ABd1234@1,a F1#,2w3E*,2We3345
-Then, the output of the program should be:
+```
+Then, the output of the program should be:  
+```text
 ABd1234@1
+```
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solutions:
+Hints:  
+In case of input data being supplied to the question, it should be assumed to be 
+a console input.  
+
+
+Solutions:  
 ```python
 import re
 value = []
@@ -669,27 +724,37 @@ print ",".join(value)
 ------------------------------------------
 
 ------------------------------------------
-Question 19
-Level 3
+No. 19  
+LVL 3  
 
-Question:
-You are required to write a program to sort the (name, age, height) tuples by ascending order where name is string, age and height are numbers. The tuples are input by console. The sort criteria is:
-1: Sort based on name;
-2: Then sort based on age;
-3: Then sort by score.
-The priority is that name > age > score.
-If the following tuples are given as input to the program:
+
+Question:  
+You are required to write a program to sort the (name, age, height) tuples by 
+ascending order where name is string, age and height are numbers. The tuples are 
+input by console. The sort criteria is:  
+(1) Sort based on name;  
+(2) Then sort based on age;  
+(3) Then sort by score.  
+The priority is that name > age > score.  
+If the following tuples are given as input to the program:  
+```text
 Tom,19,80
 John,20,90
 Jony,17,91
 Jony,17,93
 Json,21,85
+```
 Then, the output of the program should be:
+```text
 [('John', '20', '90'), ('Jony', '17', '91'), ('Jony', '17', '93'), ('Json', '21', '85'), ('Tom', '19', '80')]
+```
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
-We use itemgetter to enable multiple sort keys.
+
+Hints:  
+In case of input data being supplied to the question, it should be assumed to be 
+a console input.  
+We use itemgetter to enable multiple sort keys.  
+
 
 Solutions:
 ```python
@@ -707,14 +772,18 @@ print sorted(l, key=itemgetter(0,1,2))
 ------------------------------------------
 
 ------------------------------------------
-Question 20
-Level 3
+No. 20  
+LVL 3  
 
-Question:
-Define a class with a generator which can iterate the numbers, which are divisible by 7, between a given range 0 and n.
 
-Hints:
-Consider use yield
+Question:  
+Define a class with a generator which can iterate the numbers, which are 
+divisible by 7, between a given range 0 and n.  
+
+
+Hints:  
+Consider use yield  
+
 
 Solution:
 ```python
@@ -732,28 +801,41 @@ for i in reverse(100):
 ------------------------------------------
 
 ------------------------------------------
-Question 21
-Level 3
+No. 21  
+LVL 3  
 
-Question£º
-A robot moves in a plane starting from the original point (0,0). The robot can move toward UP, DOWN, LEFT and RIGHT with a given steps. The trace of robot movement is shown as the following:
+
+Question:  
+A robot moves in a plane starting from the original point `(0,0)`. The robot can 
+move toward `UP`, `DOWN`, `LEFT` and `RIGHT` with a given steps. The trace of robot 
+movement is shown as the following:  
+```text
 UP 5
 DOWN 3
 LEFT 3
 RIGHT 2
-¡­
-The numbers after the direction are steps. Please write a program to compute the distance from current position after a sequence of movement and original point. If the distance is a float, then just print the nearest integer.
-Example:
-If the following tuples are given as input to the program:
+```
+The numbers after the direction are steps. Please write a program to compute the 
+distance from current position after a sequence of movement and original point.   
+If the distance is a float, then just print the nearest integer.  
+Example:  
+If the following tuples are given as input to the program:  
+```text
 UP 5
 DOWN 3
 LEFT 3
 RIGHT 2
+```
 Then, the output of the program should be:
+```text
 2
+```
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Hints:  
+In case of input data being supplied to the question, it should be assumed to be 
+a console input.  
+
 
 Solution:
 ```python
