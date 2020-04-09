@@ -1158,16 +1158,20 @@ checkValue(7)
 ------------------------------------------
 
 ------------------------------------------
-2.10
+No. 32  
+LVL 1  
 
-Question:
+
+Question:  
 Define a function which can print a dictionary where the keys are numbers between 1 and 3 (both included) and the values are square of keys.
 
-Hints:
-Use dict[key]=value pattern to put entry into a dictionary.
+
+Hints:  
+Use dict[key]=value pattern to put entry into a dictionary.  
 Use ** operator to get power of a number.
 
-Solution:
+
+Solution:  
 ```python
 def printDict():
 	d=dict()
@@ -1179,20 +1183,25 @@ def printDict():
 
 printDict()
 ```
+
 ------------------------------------------
 
 ------------------------------------------
-2.10
+No. 32  
+LVL 1  
 
-Question:
-Define a function which can print a dictionary where the keys are numbers between 1 and 20 (both included) and the values are square of keys.
+
+Question:  
+Define a function which can print a dictionary where the keys are number  between 1 and 20 (both included) and the values are square of keys.  
+
 
 Hints:
-Use dict[key]=value pattern to put entry into a dictionary.
-Use ** operator to get power of a number.
-Use range() for loops.
+Use dict[key]=value pattern to put entry into a dictionary.  
+Use ** operator to get power of a number.  
+Use range() for loops.  
 
-Solution:
+
+Solution:  
 ```python
 def printDict():
 	d=dict()
@@ -1203,6 +1212,7 @@ def printDict():
 
 printDict()
 ```
+
 ------------------------------------------
 
 ------------------------------------------
